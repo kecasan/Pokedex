@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" href="./favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+
+
+  <script defer src="script.js"></script>
+
+  <title>Pokédex</title>
+</head>
+<body>
+  
+  <main>
+    <div class="fundo">
+      <img src="tumblr_mufo2kiUze1rsc51fo1_500.gif" alt="">
+    </div>
+    <img src="#" alt="pokemon" class="pokemon__image">
+    <h1 class="pokemon__data">
+      <span class="pokemon__number"></span> -
+      <span class="pokemon__name"></span>
+    </h1>
+
+    <form class="form">
+      <input
+        type="search"
+        class="input__search"
+        placeholder="Nome ou numero"
+        required
+      />
+    </form>
+
+    
+    <div class="tab-buttons">
+      <button class="tab-button1" onclick="openTab('general')">Geral</button>
+      <button class="tab-button2" onclick="openTab('abilities')">Habilidades</button>
+      <button class="tab-button3" onclick="openTab('evolutions')">Evoluções</button>
+    </div>
+
+
+    <div id="general" class="tab-content">
+      <p> <h2 class="pokemon__types"></h2></p>
+    </div>
+
+    <div id="abilities" class="tab-content" style="display:none;">
+      <p> <h2 class="pokemon__abilities"></h2></p>
+    </div>
+
+    <div id="evolutions" class="tab-content" style="display:none;">
+      <p> <h2 class="pokemon__evolutions"></h2></p>
+    </div>
+
+    <div class="buttons">
+      <button class="button btn-prev">Prev &lt;</button>
+      <button class="button btn-next">Next &gt;</button>
+    </div>
+
+    <img src="3.png" alt="pokedex" class="pokedex">
+
+
+  </main>
+
+  <script>
+
+    function openTab(tabName) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.style.display = 'none'); 
+      document.getElementById(tabName).style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
