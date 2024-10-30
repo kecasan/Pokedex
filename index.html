@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./favicons/favicon-16x16.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <!-- Fundo do Pokémon e imagem juntos -->
+        <div class="fundo">
+            <div class="pokemon-display">
+                <img src="tumblr_mufo2kiUze1rsc51fo1_500.gif" alt="fundo animado" class="fundo__gif" />
+                <img src="#" alt="pokemon" class="pokemon__image" />
+            </div>
+    
+            <!-- Quadro de informações do Pokémon -->
+            <div class="pokemon-content">
+                <h1 class="pokemon__data">
+                    <span class="pokemon__number"></span> -
+                    <span class="pokemon__name"></span>
+                </h1>
+    
+                <form class="form">
+                    <input
+                        type="search"
+                        class="input__search"
+                        placeholder="Nome ou número"
+                        required
+                    />
+                </form>
+            </div>
+    
+            <!-- Botões de aba -->
+            <div class="tab-buttons">
+                <button class="tab-button1" onclick="openTab('general')">Geral</button>
+                <button class="tab-button2" onclick="openTab('abilities')">Habilidades</button>
+                <button class="tab-button3" onclick="openTab('evolutions')">Evoluções</button>
+                <button class="tab-button4" onclick="openTab('description')">Descrição</button>
+                <button class="tab-button5" onclick="openTab('stats')">Estatísticas</button>
+                <button class="tab-button6" onclick="openTab('moves')">Movimentos</button>
+            </div>
+        </div class="info-card">
+        <!-- Conteúdo das abas -->
+            <div id="general" class="tab-content">
+                <h2 class="pokemon__types"></h2>
+            </div>
+
+            <div id="abilities" class="tab-content" style="display: none">
+                <h2 class="pokemon__abilities"></h2>
+            </div>
+
+            <div id="evolutions" class="tab-content" style="display: none">
+                <h2 class="pokemon__evolutions"></h2>
+            </div>
+
+            <div id="description" class="tab-content" style="display: none">
+                <h2 class="pokemon__description"></h2>
+                <p class="pokemon__habitat"></p>
+                <p class="pokemon__color"></p>
+            </div>
+
+            <div id="stats" class="tab-content" style="display: none">
+                <h2 class="pokemon__stats">Estatísticas</h2>
+            </div>
+
+            <div id="moves" class="tab-content" style="display: none">
+                <h2 class="pokemon__moves">Movimentos</h2>
+            </div>
+        <div>
+
+            
+    
+            <!-- Botões de navegação -->
+            <div class="buttons">
+                <button class="button btn-prev">Prev &lt;</button>
+                <button class="button btn-next">Next &gt;</button>
+            </div>
+        </div>
+    </main>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

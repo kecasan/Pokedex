@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+
+body {
+    text-align: center;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://i.redd.it/nq9bsci7lyr81.gif);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 450px;
+    padding: 10px;
+}
+
+.pokemon-display {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.fundo__gif {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.pokemon__image {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    padding: 5px;
+    left: 25%;
+}
+
+.pokemon-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+    padding: 10px; /* Ajustar padding se necessário */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon__data {
+    font-weight: 600;
+    color: #000;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.input__search {
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.tab-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.tab-button1,
+.tab-button2,
+.tab-button3,
+.tab-button4,
+.tab-button5,
+.tab-button6 {
+    background-color: #ff3300;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border: solid 2px black;
+    flex: 1;
+    transition: background-color 0.3s;
+}
+
+.tab-button1:hover,
+.tab-button2:hover,
+.tab-button3:hover,
+.tab-button4:hover,
+.tab-button5:hover,
+.tab-button6:hover {
+    background-color: #000;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tab-content {
+    display: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: left;
+    width: 25%;
+    height: 70%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #353333;
+    position: absolute;
+    right: 75%;
+    bottom: 20%;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.button {
+    padding: 8px 20px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #000;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+}
+
+.loading {
+    display: none;
+}
