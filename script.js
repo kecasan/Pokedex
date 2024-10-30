@@ -141,3 +141,70 @@ function openTab(tabName) {
     });
     document.getElementById(tabName).style.display = 'block';
 }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilhe os elementos verticalmente */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Reduza o tamanho da fonte */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* Mantém a proporção */
+    }
+    
+    .container {
+        width: 100%; /* Usar largura em porcentagem */
+        padding: 1rem; /* Usar rem para espaçamento */
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Ajusta automaticamente as colunas */
+        gap: 1rem;
+    }
+    
+    button {
+        padding: 10px 20px; /* Botões devem ser grandes o suficiente para fácil clique */
+        font-size: 1rem; /* Tamanho de fonte legível */
+    }
+    
+    .sidebar {
+        display: none; /* Ocultar a barra lateral em dispositivos móveis */
+    }
+
+    .container {
+        flex-direction: column; /* Alterar para coluna em telas menores */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Tamanho da fonte reduzido */
+    }
+
+    button {
+        width: 100%; /* Botões ocupam toda a largura */
+    }
+
+    .tab-content {
+        display: none;
+        font-size: 1rem;
+        color: #fff;
+        padding: 10px;
+        margin-top: 15px;
+        text-align: left;
+        width: 45%;
+        height: 30%;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        background-color: #353333;
+        position: absolute;
+        right: 27%;
+        bottom: 71.90%;
+        text-transform: uppercase;
+    }
+
+}
