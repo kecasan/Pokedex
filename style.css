@@ -57,6 +57,7 @@ main {
     object-fit: contain;
     padding: 5px;
     left: 25%;
+    bottom: -20%;
 }
 
 .pokemon-content {
